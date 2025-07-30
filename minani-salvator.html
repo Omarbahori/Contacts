@@ -10,6 +10,10 @@
       src: local('Arial Rounded MT Bold');
     }
 
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Arial Rounded MT Bold', sans-serif;
       background-color: #f5f7fb;
@@ -32,19 +36,9 @@
       margin-bottom: 20px;
     }
 
-    .title {
-      font-size: 22px;
-      color: white;
-      background-color: #2f4c95;
-      padding: 12px 0;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-
     .download-btn {
       display: block;
       width: 100%;
-      max-width: 100%;
       background-color: #2e8b2d;
       color: white;
       padding: 14px 0;
@@ -52,8 +46,18 @@
       font-weight: bold;
       border: none;
       border-radius: 8px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       text-decoration: none;
+    }
+
+    .title {
+      width: 100%;
+      font-size: 22px;
+      color: white;
+      background-color: #2f4c95;
+      padding: 12px 0;
+      border-radius: 8px;
+      margin-bottom: 20px;
     }
 
     .card {
@@ -118,7 +122,6 @@
       }
 
       .download-btn {
-        padding: 12px;
         font-size: 15px;
       }
     }
@@ -127,16 +130,19 @@
 <body>
   <div class="container">
     <img src="Logo.png.jpg" alt="Logo" class="logo" />
-    <div class="title">Me MINANI Salvator</div>
 
-    <!-- 📥 Moved Button Up Here -->
+    <!-- ✅ Download Button First -->
     <a href="minani-salvator.vcf" class="download-btn">Télécharger Contact</a>
 
+    <!-- 🔵 Then Title -->
+    <div class="title">Me MINANI Salvator</div>
+
+    <!-- 📋 Then Info -->
     <div class="card">
-      <div class="info-line"><div class="label">Nom du Cabinet:</div><div class="value">Alpha Justice Chambers</div></div>
-      <div class="info-line"><div class="label">Titre:</div><div class="value">Avocat</div></div>
-      <div class="info-line"><div class="label">Email:</div><div class="value"><a href="mailto:alphajustice2018@gmail.com">alphajustice2018@gmail.com</a></div></div>
+      <div class="info-line"><div class="label">Profession:</div><div class="value">Avocat</div></div>
       <div class="info-line"><div class="label">Téléphone:</div><div class="value">+257 79 31 56 89</div></div>
+      <div class="info-line"><div class="label">Email:</div><div class="value"><a href="mailto:alphajustice2018@gmail.com">alphajustice2018@gmail.com</a></div></div>
+      <div class="info-line"><div class="label">Nom du Cabinet:</div><div class="value">Alpha Justice Chambers</div></div>
       <div class="info-line"><div class="label">Adresse:</div><div class="value">Rohero I, 65 Blvd de l'indépendance, librairie St Paul B17</div></div>
       <div class="info-line"><div class="label">Site web:</div><div class="value"><a href="http://www.alphajustice.org" target="_blank">www.alphajustice.org</a></div></div>
       <div class="info-line"><div class="label">NIF:</div><div class="value">4000814253</div></div>
