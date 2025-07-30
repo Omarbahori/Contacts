@@ -86,6 +86,38 @@
     a:hover {
       text-decoration: underline;
     }
+
+    /* 📱 Responsive layout for smaller screens */
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+
+      .title {
+        font-size: 20px;
+        padding: 10px;
+      }
+
+      .card {
+        font-size: 15px;
+        padding: 15px;
+      }
+
+      .info-line {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .label {
+        width: auto;
+        margin-bottom: 4px;
+      }
+
+      .download-btn {
+        padding: 10px 24px;
+        font-size: 15px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -94,13 +126,13 @@
     <div class="title">Me MINANI Salvator</div>
 
     <div class="card">
-      <div class="info-line"><div class="label">Nom du Cabinet :</div><div class="value">Alpha Justice Chambers</div></div>
-      <div class="info-line"><div class="label">Titre :</div><div class="value">Avocat</div></div>
-      <div class="info-line"><div class="label">Email :</div><div class="value"><a href="mailto:alphajustice2018@gmail.com">alphajustice2018@gmail.com</a></div></div>
-      <div class="info-line"><div class="label">Téléphone :</div><div class="value">+257 79 31 56 89</div></div>
-      <div class="info-line"><div class="label">Adresse :</div><div class="value">Rohero I, 65 Blvd de l'indépendance, librairie St Paul B17</div></div>
-      <div class="info-line"><div class="label">Site web :</div><div class="value"><a href="http://www.alphajustice.org" target="_blank">www.alphajustice.org</a></div></div>
-      <div class="info-line"><div class="label">NIF :</div><div class="value">4000814253</div></div>
+      <div class="info-line"><div class="label">Nom du Cabinet:</div><div class="value">Alpha Justice Chambers</div></div>
+      <div class="info-line"><div class="label">Titre:</div><div class="value">Avocat</div></div>
+      <div class="info-line"><div class="label">Email:</div><div class="value"><a href="mailto:alphajustice2018@gmail.com">alphajustice2018@gmail.com</a></div></div>
+      <div class="info-line"><div class="label">Téléphone:</div><div class="value">+257 79 31 56 89</div></div>
+      <div class="info-line"><div class="label">Adresse:</div><div class="value">Rohero I, 65 Blvd de l'indépendance, librairie St Paul B17</div></div>
+      <div class="info-line"><div class="label">Site web:</div><div class="value"><a href="http://www.alphajustice.org" target="_blank">www.alphajustice.org</a></div></div>
+      <div class="info-line"><div class="label">NIF:</div><div class="value">4000814253</div></div>
     </div>
 
     <a href="minani-salvator.vcf" class="download-btn">Télécharger Contact</a>
