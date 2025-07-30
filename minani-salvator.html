@@ -38,7 +38,22 @@
       background-color: #2f4c95;
       padding: 12px 0;
       border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .download-btn {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      background-color: #2e8b2d;
+      color: white;
+      padding: 14px 0;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
       margin-bottom: 20px;
+      text-decoration: none;
     }
 
     .card {
@@ -68,16 +83,6 @@
       flex: 1;
     }
 
-    .download-btn {
-      display: inline-block;
-      background-color: #2e8b2d;
-      color: white;
-      padding: 12px 30px;
-      font-size: 16px;
-      border-radius: 30px;
-      text-decoration: none;
-    }
-
     a {
       color: #313752;
       text-decoration: none;
@@ -87,7 +92,6 @@
       text-decoration: underline;
     }
 
-    /* 📱 Responsive layout for smaller screens */
     @media (max-width: 600px) {
       .container {
         padding: 15px;
@@ -114,7 +118,7 @@
       }
 
       .download-btn {
-        padding: 10px 24px;
+        padding: 12px;
         font-size: 15px;
       }
     }
@@ -125,6 +129,9 @@
     <img src="Logo.png.jpg" alt="Logo" class="logo" />
     <div class="title">Me MINANI Salvator</div>
 
+    <!-- 📥 Moved Button Up Here -->
+    <a href="minani-salvator.vcf" class="download-btn">Télécharger Contact</a>
+
     <div class="card">
       <div class="info-line"><div class="label">Nom du Cabinet:</div><div class="value">Alpha Justice Chambers</div></div>
       <div class="info-line"><div class="label">Titre:</div><div class="value">Avocat</div></div>
@@ -134,8 +141,6 @@
       <div class="info-line"><div class="label">Site web:</div><div class="value"><a href="http://www.alphajustice.org" target="_blank">www.alphajustice.org</a></div></div>
       <div class="info-line"><div class="label">NIF:</div><div class="value">4000814253</div></div>
     </div>
-
-    <a href="minani-salvator.vcf" class="download-btn">Télécharger Contact</a>
   </div>
 </body>
 </html>
