@@ -12,18 +12,18 @@
 
     body {
       font-family: 'Arial Rounded MT Bold', sans-serif;
-      background-color: #f5f6fa;
+      background-color: #f5f7fb;
       margin: 0;
       padding: 0;
       text-align: center;
-      color: #1a2f66;
+      color: #313752;
     }
 
     .container {
       max-width: 600px;
       margin: 40px auto;
       padding: 20px;
-      background-color: #ffffff;
+      background-color: #f5f7fb;
       border-radius: 12px;
     }
 
@@ -35,7 +35,7 @@
     .title {
       font-size: 22px;
       color: white;
-      background-color: #3252a5;
+      background-color: #2f4c95;
       padding: 12px 0;
       border-radius: 8px;
       margin-bottom: 20px;
@@ -43,23 +43,29 @@
 
     .card {
       background-color: #f9f9f9;
-      border: 1px solid #3252a5;
+      border: 1px solid #2f4c95;
       border-radius: 10px;
       padding: 20px;
       text-align: left;
       font-size: 16px;
-      color: #3252a5;
+      color: #313752;
       margin-bottom: 30px;
     }
 
-    .card p {
-      margin: 10px 0;
+    .info-line {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 12px;
     }
 
     .label {
       font-weight: bold;
-      display: inline-block;
-      width: 130px;
+      width: 140px;
+      flex-shrink: 0;
+    }
+
+    .value {
+      flex: 1;
     }
 
     .download-btn {
@@ -73,14 +79,13 @@
     }
 
     a {
-      color: #3252a5;
+      color: #313752;
       text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
     }
-
   </style>
 </head>
 <body>
@@ -89,13 +94,13 @@
     <div class="title">Me MINANI Salvator</div>
 
     <div class="card">
-      <p><span class="label">Nom du Cabinet:</span> Alpha Justice Chambers</p>
-      <p><span class="label">Titre:</span> Avocat</p>
-      <p><span class="label">Email:</span> <a href="mailto:alphajustice2018@gmail.com">alphajustice2018@gmail.com</a></p>
-      <p><span class="label">Téléphone:</span> +257 79 31 56 89</p>
-      <p><span class="label">Adresse:</span> Rohero I, 65 Blvd de l'indépendance,librairie St Paul B17</p>
-      <p><span class="label">Site web:</span> <a href="http://www.alphajustice.org" target="_blank">www.alphajustice.org</a></p>
-      <p><span class="label">NIF:</span> 4000814253</p>
+      <div class="info-line"><div class="label">Nom du Cabinet :</div><div class="value">Alpha Justice Chambers</div></div>
+      <div class="info-line"><div class="label">Titre :</div><div class="value">Avocat</div></div>
+      <div class="info-line"><div class="label">Email :</div><div class="value"><a href="mailto:alphajustice2018@gmail.com">alphajustice2018@gmail.com</a></div></div>
+      <div class="info-line"><div class="label">Téléphone :</div><div class="value">+257 79 31 56 89</div></div>
+      <div class="info-line"><div class="label">Adresse :</div><div class="value">Rohero I, 65 Blvd de l'indépendance, librairie St Paul B17</div></div>
+      <div class="info-line"><div class="label">Site web :</div><div class="value"><a href="http://www.alphajustice.org" target="_blank">www.alphajustice.org</a></div></div>
+      <div class="info-line"><div class="label">NIF :</div><div class="value">4000814253</div></div>
     </div>
 
     <a href="minani-salvator.vcf" class="download-btn">Télécharger Contact</a>
